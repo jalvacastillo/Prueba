@@ -1,0 +1,143 @@
+/* Estilo base */
+    html, body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+    a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #03a9f4;
+    }
+
+    a:hover{
+        /*text-decoration: underline;*/
+        color: red;
+    }
+
+    .text-right{
+        text-align: right !important;
+    }
+
+    .forma-bottom:after{
+        content:"";
+        position:absolute;
+        background-image: url('../img/forma.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+    }
+
+/* Menu */
+    nav{
+        background: #9e9e9e;
+        padding: 0px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav > ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav > ul > li {
+        list-style: none;
+    }
+
+    nav > ul > li > a{
+        text-decoration: none;
+        color: white;
+    }
+
+    nav > ul > li > a:hover{
+        color: red;
+    }
+
+
+/* Header */
+    header{
+        text-align: center;
+        background-color: red;
+        padding: 20px;
+        height: calc( 100vh - 91px);
+    }
+
+/* Servicios */
+
+    #servicios{
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 100px;
+        position: relative;
+    }
+
+    #servicios > .servicio{
+        text-align: center !important;
+        color: #444;
+        margin: 5px;
+        border: 1px #999 solid;
+        padding-bottom: 35px;
+
+    }
+
+    #servicios > .servicio img{
+        width: 100%;
+    }
+
+    #servicios > .servicio h3{
+        margin: 0px;
+    }
+
+    #servicios > .servicio p{
+        margin: 5px 0px;
+    }
+
+    #servicios > .servicio a{
+        margin: 15px 0px;
+        display: block;
+    }
+
+    #servicios > .servicio span{
+        font-size: 12px;
+    }
+
+
+@media print {
+    nav{
+        display: none;
+    }
+}
+
+/* Responsive Telefono */
+
+@media screen and (max-width: 576px) {
+
+    #servicios{
+        padding: 50px 20px;
+        display: block;
+    }
+
+    #servicios > .servicio{
+        margin-bottom: 15px; 
+    }
+
+    #map > article > p {
+        text-align: center;
+    }
+
+
+    nav ul{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,13 @@
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+    #servicios{
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #servicios{
+        display: block;
+    }
+}
